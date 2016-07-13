@@ -1,0 +1,4 @@
+work	"ipcore_dir/addr_use.vhd"
+work	"ipcore_dir/sine_wave.vhd"
+work	"sin_cos_module.vhd"
+work	"top_one.vhd"

@@ -1,0 +1,44 @@
+
+*** Running vivado
+    with args -log one.vds -m32 -mode batch -messageDb vivado.pb -source one.tcl
+
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+
+****** Vivado v2014.4
+  **** SW Build 1071353 on Tue Nov 18 18:06:20 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source one.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx485tffg1157-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_5/project_5.cache/wt [current_project]
+# set_property parent.project_path C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_5/project_5.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd
+#   C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/one.vhd
+# }
+# catch { write_hwdef -file one.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top one -part xc7vx485tffg1157-1
+Command: synth_design -top one -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7vx485t'
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7vx485t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+
+    while executing
+"synth_design -top one -part xc7vx485tffg1157-1"
+    (file "one.tcl" line 22)
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 30 10:54:53 2015...

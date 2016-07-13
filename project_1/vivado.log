@@ -1,0 +1,24 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 18:06:20 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Nov 25 17:41:03 2015
+# Process ID: 1476
+# Log file: C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/vivado.log
+# Journal file: C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'sine_wave' is locked:
+* IP definition 'CORDIC (4.0)' for IP 'sine_wave' has a newer major version in the IP Catalog.
+* Current project part 'xc7vx485tffg1157-1' and the part 'xc4vfx12sf363-12' used to customize the IP 'sine_wave' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 565.969 ; gain = 121.574
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 25 17:47:18 2015...

@@ -1,0 +1,21 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2014.4                 C:/Xilinx/Vivado/2014.4
+Matlab 8.4.0.150421 (R2014b)            C:\Program Files\MATLAB\R2014b
+Vivado 2014.4                           C:/Xilinx/Vivado/2014.4
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: All Xilinx Blocks must be contained in a level of hierarc...
+     Block: 'wave_simulate/Black Box'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'wave_simulate/Black Box'
+
+Details:
+All Xilinx Blocks must be contained in a level of hierarchy with a
+System Generator Token.
+
+--------------------------------------------------------------------------------

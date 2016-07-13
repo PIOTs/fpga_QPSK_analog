@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4
+# SW Build 1071353 on Tue Nov 18 18:06:20 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Nov 30 10:45:00 2015
+# Process ID: 3732
+# Log file: C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_4/project_4.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_4/project_4.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_4/project_4.sim/sim_1/behav/xsim.dir/one_behav/webtalk/xsim_webtalk.tcl -notrace

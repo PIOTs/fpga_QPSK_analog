@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/mtech/Desktop/vlsi_proj/sinn/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/mtech/Desktop/vlsi_proj/sinn/xst"
+elaborate
+-ifn sin_cos_module.prj
+-ifmt mixed

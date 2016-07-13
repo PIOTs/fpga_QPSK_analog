@@ -1,0 +1,255 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: top_one.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_one.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_one"
+Output Format                      : NGC
+Target Device                      : xc4vfx12-12-sf363
+
+---- Source Options
+Top Module Name                    : top_one
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/sine_wave.vhd" in Library work.
+Architecture sine_wave_a of Entity sine_wave is up to date.
+Compiling vhdl file "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/addr_use.vhd" in Library work.
+Architecture addr_use_a of Entity addr_use is up to date.
+Compiling vhdl file "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd" in Library work.
+Architecture behavioral of Entity sin_cos_module is up to date.
+Compiling vhdl file "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd" in Library work.
+Architecture behavioral of Entity top_one is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top_one> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sin_cos_module> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top_one> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd" line 143: Instantiating black box module <addr_use>.
+Entity <top_one> analyzed. Unit <top_one> generated.
+
+Analyzing Entity <sin_cos_module> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd" line 59: Instantiating black box module <sine_wave>.
+Entity <sin_cos_module> analyzed. Unit <sin_cos_module> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <sin_cos_module>.
+    Related source file is "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd".
+Unit <sin_cos_module> synthesized.
+
+
+Synthesizing Unit <top_one>.
+    Related source file is "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd".
+WARNING:Xst:1780 - Signal <i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <top_one> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/addr_use.ngc>.
+Reading core <ipcore_dir/sine_wave.ngc>.
+Loading core <addr_use> for timing and area information for instance <a1>.
+Loading core <sine_wave> for timing and area information for instance <u0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<9>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<9>>
+   Output signal of FDE instance <a1/blk0000000b>
+   Signal <phase_in<9>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<8>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<8>>
+   Output signal of FDE instance <a1/blk0000000a>
+   Signal <phase_in<8>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<7>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<7>>
+   Output signal of FDE instance <a1/blk00000009>
+   Signal <phase_in<7>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<6>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<6>>
+   Output signal of FDE instance <a1/blk00000008>
+   Signal <phase_in<6>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<5>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<5>>
+   Output signal of FDE instance <a1/blk00000007>
+   Signal <phase_in<5>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<4>>
+   Output signal of FDE instance <a1/blk00000006>
+   Signal <phase_in<4>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<3>>
+   Output signal of FDE instance <a1/blk00000005>
+   Signal <phase_in<3>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<2>>
+   Output signal of FDE instance <a1/blk00000004>
+   Signal <phase_in<2>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<1>>
+   Output signal of FDE instance <a1/blk00000003>
+   Signal <phase_in<1>> in Unit <top_one> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <top_one> on signal <phase_in<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <phase_in<0>>
+   Output signal of FDE instance <a1/blk00000002>
+   Signal <phase_in<0>> in Unit <top_one> is assigned to GND
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.83 secs
+ 
+--> 
+
+Total memory usage is 214124 kilobytes
+
+Number of errors   :   10 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

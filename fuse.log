@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/test_qpskk_isim_beh.exe -prj C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/test_qpskk_beh.prj work.test_qpskk 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/modulator.vhd" into library work
+Parsing VHDL file "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/test_qpskk.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 106412 KB
+Fuse CPU Usage: 467 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity modulator [modulator_default]
+Compiling architecture behavior of entity test_qpskk
+Time Resolution for simulation is 1ps.
+Compiled 10 VHDL Units
+Built simulation executable C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/test_qpskk_isim_beh.exe
+Fuse Memory Usage: 130648 KB
+Fuse CPU Usage: 764 ms

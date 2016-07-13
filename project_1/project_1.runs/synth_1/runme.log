@@ -1,0 +1,327 @@
+
+*** Running vivado
+    with args -log sin_cos_module.vds -m32 -mode batch -messageDb vivado.pb -source sin_cos_module.tcl
+
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+
+****** Vivado v2014.4
+  **** SW Build 1071353 on Tue Nov 18 18:06:20 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source sin_cos_module.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx485tffg1157-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.cache/wt [current_project]
+# set_property parent.project_path C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_ip c:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.srcs/sources_1/ip/sine_wave/sine_wave.xco
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+# set_property is_locked true [get_files c:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.srcs/sources_1/ip/sine_wave/sine_wave.xco]
+# read_vhdl -library xil_defaultlib C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file sin_cos_module.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top sin_cos_module -part xc7vx485tffg1157-1
+Command: synth_design -top sin_cos_module -part xc7vx485tffg1157-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'sine_wave' is locked:
+* IP definition 'CORDIC (4.0)' for IP 'sine_wave' has a newer major version in the IP Catalog.
+* Current project part 'xc7vx485tffg1157-1' and the part 'xc4vfx12sf363-12' used to customize the IP 'sine_wave' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-1223] The version limit for your license is '2014.12' and will expire in -329 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:01:12 . Memory (MB): peak = 240.129 ; gain = 38.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sin_cos_module' [C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd:43]
+INFO: [Synth 8-3491] module 'sine_wave' declared at 'c:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.srcs/sources_1/ip/sine_wave/sine_wave.vhd:43' bound to instance 'u0' of component 'sine_wave' [C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'sine_wave' [c:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.srcs/sources_1/ip/sine_wave/sine_wave.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'sine_wave' (1#1) [c:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.srcs/sources_1/ip/sine_wave/sine_wave.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'sin_cos_module' (2#1) [C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:01:14 . Memory (MB): peak = 258.828 ; gain = 56.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:01:14 . Memory (MB): peak = 258.828 ; gain = 56.969
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/virtex7/virtex7/xc7vx485t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/virtex7/virtex7/xc7vx485t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/virtex7/virtex7/xc7vx485t/ffg1157/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 498.098 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:01:56 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:01:56 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u0. (constraint file  C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.runs/synth_1/dont_touch.xdc, line 5).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:56 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:01:56 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sin_cos_module 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:57 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:57 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:57 . Memory (MB): peak = 498.098 ; gain = 296.238
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:57 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:57 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:57 . Memory (MB): peak = 498.098 ; gain = 296.238
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:57 . Memory (MB): peak = 498.098 ; gain = 296.238
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:02:25 . Memory (MB): peak = 512.191 ; gain = 310.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:02:25 . Memory (MB): peak = 512.191 ; gain = 310.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:02:25 . Memory (MB): peak = 517.477 ; gain = 315.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:02:26 . Memory (MB): peak = 517.477 ; gain = 315.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:02:26 . Memory (MB): peak = 517.477 ; gain = 315.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:02:26 . Memory (MB): peak = 517.477 ; gain = 315.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sine_wave     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |sine_wave |     1|
+|2     |IBUF      |    11|
+|3     |OBUF      |    20|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    51|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:02:26 . Memory (MB): peak = 517.477 ; gain = 315.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:43 . Memory (MB): peak = 517.477 ; gain = 59.641
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:02:26 . Memory (MB): peak = 517.477 ; gain = 315.617
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20141029 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P_INT.20141029 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design sine_wave.ngc ...
+WARNING:NetListWriters:298 - No output is written to sine_wave.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file sine_wave.edif ...
+ngc2edif: Total memory usage is 61276 kilobytes
+
+Reading core file 'c:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/project_1/project_1.srcs/sources_1/ip/sine_wave/sine_wave.ngc' for (cell view 'sine_wave', library 'work')
+Parsing EDIF File [./.ngc2edfcache/sine_wave_ngc_a638d758.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/sine_wave_ngc_a638d758.edif]
+INFO: [Netlist 29-17] Analyzing 809 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sin_cos_module' is not ideal for floorplanning, since the cellview 'sine_wave' defined in file 'sine_wave.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20141029
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 527 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 122 instances
+  FD => FDRE: 361 instances
+  FDE => FDRE: 5 instances
+  INV => LUT1: 27 instances
+  LUT2_D => LUT2: 2 instances
+  LUT4_L => LUT4: 9 instances
+  MUXF5 => LUT3: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:02:27 . Memory (MB): peak = 525.160 ; gain = 321.605
+# write_checkpoint -noxdef sin_cos_module.dcp
+# catch { report_utilization -file sin_cos_module_utilization_synth.rpt -pb sin_cos_module_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.390 . Memory (MB): peak = 525.160 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 25 14:46:30 2015...

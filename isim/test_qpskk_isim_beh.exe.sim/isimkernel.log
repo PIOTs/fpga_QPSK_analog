@@ -1,0 +1,28 @@
+Command line:
+   test_qpskk_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49414
+
+Mon Nov 30 11:16:28 2015
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 827.728 Meg
+
+ Total Signals          : 11
+ Total Nets             : 13
+ Total Signal Drivers   : 7
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 6
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 1036
+
+ Total Simulation Time: 0.124801 sec
+
+ Current Memory Usage: 827.728 Meg
+
+Mon Nov 30 11:19:54 2015
+

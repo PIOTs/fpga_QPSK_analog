@@ -1,0 +1,14 @@
+# Output products list for <sine_wave>
+sine_wave.asy
+sine_wave.gise
+sine_wave.ngc
+sine_wave.sym
+sine_wave.vhd
+sine_wave.vho
+sine_wave.xco
+sine_wave.xise
+sine_wave\doc\cordic_ds249.pdf
+sine_wave\doc\cordic_v4_0_vinfo.html
+sine_wave_flist.txt
+sine_wave_readme.txt
+sine_wave_xmdf.tcl

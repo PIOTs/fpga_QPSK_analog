@@ -1,0 +1,2 @@
+vhdl isim_temp "modulation_vhdl/modulator.vhd"
+vhdl isim_temp "modulation_vhdl/test_qpskk.vhd"

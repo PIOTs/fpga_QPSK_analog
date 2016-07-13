@@ -1,0 +1,2 @@
+vhdl work "modulation_vhdl/modulator.vhd"
+vhdl work "modulation_vhdl/test_qpskk.vhd"

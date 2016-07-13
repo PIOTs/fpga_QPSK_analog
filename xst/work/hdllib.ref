@@ -1,0 +1,8 @@
+EN sin_cos_module NULL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd sub00/vhpl00 1448862697
+AR sin_cos_module behavioral C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd sub00/vhpl03 1448862698
+EN addr_use NULL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/addr_use.vhd sub00/vhpl06 1448862695
+EN top_one NULL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd sub00/vhpl04 1448862699
+AR addr_use addr_use_a C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/addr_use.vhd sub00/vhpl07 1448862696
+AR top_one behavioral C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd sub00/vhpl05 1448862700
+EN sine_wave NULL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/sine_wave.vhd sub00/vhpl01 1448862693
+AR sine_wave sine_wave_a C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/sine_wave.vhd sub00/vhpl02 1448862694

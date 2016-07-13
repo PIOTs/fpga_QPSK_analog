@@ -1,0 +1,16 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+#-----------------------------------------------------------
+# Webtalk v2014.4
+# SW Build 1071353 on Tue Nov 18 18:06:20 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Nov 28 15:13:34 2015
+# Process ID: 2560
+# Log file: C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/project_1/project_1.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/project_1/project_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/project_1/project_1.sim/sim_1/behav/xsim.dir/test_qpskk_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1036446962 -regid "" -xml C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/project_1/project_1.sim/sim_1/behav/xsi..."
+    (file "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/project_1/project_1.sim/sim_1/behav/xsim.dir/test_qpskk_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 28 15:13:35 2015...

@@ -1,0 +1,15 @@
+# Output products list for <addr_use>
+_xmsgs\pn_parser.xmsgs
+addr_use.asy
+addr_use.gise
+addr_use.ngc
+addr_use.sym
+addr_use.vhd
+addr_use.vho
+addr_use.xco
+addr_use.xise
+addr_use\doc\c_addsub_v11_0_readme.txt
+addr_use\doc\c_addsub_v11_0_vinfo.html
+addr_use\doc\ds214_addsub.pdf
+addr_use_flist.txt
+addr_use_xmdf.tcl

@@ -1,0 +1,55 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win32) Build 1071353 Tue Nov 18 18:06:20 MST 2014
+| Date         : Wed Nov 25 14:51:06 2015
+| Host         : node3228 running 32-bit major release  (build 7600)
+| Command      : report_control_sets -verbose -file sin_cos_module_control_sets_placed.rpt
+| Design       : sin_cos_module
+| Device       : xc7vx485t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     2 |
+| Minimum Number of register sites lost to control set restrictions |    11 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             409 |          132 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              20 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------+------------------+------------------+----------------+
+|  Clock Signal  |  Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+----------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | u0/sig000005e5 |                  |                6 |             20 |
+|  clk_IBUF_BUFG |                |                  |              134 |            414 |
++----------------+----------------+------------------+------------------+----------------+
+
+

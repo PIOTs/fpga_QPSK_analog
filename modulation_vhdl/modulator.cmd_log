@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/modulator.xst" -ofn "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/modulator.syr" 

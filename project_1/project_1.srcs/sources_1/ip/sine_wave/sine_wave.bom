@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="sine_wave">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="sine_wave/doc/cordic_ds249.pdf" type="ignore" timestamp="Tue Nov 24 08:48:02 2015" checksum="0">
+				</File>
+				<File name="sine_wave/doc/cordic_v4_0_vinfo.html" type="ignore" timestamp="Tue Nov 24 08:48:02 2015" checksum="0">
+				</File>
+				<File name="sine_wave.asy" type="asy" timestamp="Tue Nov 24 08:48:02 2015" checksum="0">
+				</File>
+				<File name="sine_wave.ngc" type="ngc" timestamp="Tue Nov 24 08:48:01 2015" checksum="0">
+				</File>
+				<File name="sine_wave.sym" type="asy" timestamp="Tue Nov 24 08:48:03 2015" checksum="0">
+				</File>
+				<File name="sine_wave.vhd" type="vhdl" timestamp="Tue Nov 24 08:48:02 2015" checksum="0">
+				</File>
+				<File name="sine_wave.vho" type="vho" timestamp="Tue Nov 24 08:48:02 2015" checksum="0">
+				</File>
+				<File name="sine_wave.xco" type="xco" timestamp="Tue Nov 24 08:45:42 2015" checksum="0">
+				</File>
+				<File name="sine_wave_xmdf.tcl" type="ignore" timestamp="Tue Nov 24 08:48:03 2015" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

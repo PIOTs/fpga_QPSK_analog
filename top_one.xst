@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/xst"
+elaborate
+-ifn top_one.prj
+-ifmt mixed

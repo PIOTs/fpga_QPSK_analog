@@ -1,0 +1,33 @@
+V3 17
+FL C:/Users/mtech/Desktop/vlsi_proj/sinn/ipcore_dir/sine_wave.vhd 2015/11/24.14:18:02 P.28xd
+FL C:/Users/mtech/Desktop/vlsi_proj/sinn/sin_cos_module.vhd 2015/11/24.16:00:25 P.28xd
+FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/addr_use.vhd 2015/11/26.19:02:56 P.28xd
+EN work/addr_use 1448862695 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/addr_use.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/addr_use/addr_use_a 1448862696 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/addr_use.vhd \
+      EN work/addr_use 1448862695
+FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/sine_wave.vhd 2015/11/24.14:18:02 P.28xd
+EN work/sine_wave 1448862693 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/sine_wave.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/sine_wave/sine_wave_a 1448862694 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/ipcore_dir/sine_wave.vhd \
+      EN work/sine_wave 1448862693
+FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd 2015/11/24.16:03:05 P.28xd
+EN work/sin_cos_module 1448862697 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/sin_cos_module/Behavioral 1448862698 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/sin_cos_module.vhd \
+      EN work/sin_cos_module 1448862697 CP sine_wave
+FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd 2015/11/30.11:21:24 P.28xd
+EN work/top_one 1448862699 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/top_one/Behavioral 1448862700 \
+      FL C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/top_one.vhd EN work/top_one 1448862699 \
+      CP addr_use CP sin_cos_module

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/test_qpskk_isim_beh.exe" -prj "C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/test_qpskk_beh.prj" "work.test_qpskk" 

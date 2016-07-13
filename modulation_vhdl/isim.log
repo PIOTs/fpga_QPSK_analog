@@ -1,0 +1,11 @@
+ISim log file
+Running: C:\Users\mtech\poonam_vlsi\vlsi_proj\sinn\modulation_vhdl\test_qpskk_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/mtech/poonam_vlsi/vlsi_proj/sinn/modulation_vhdl/test_qpskk_isim_beh.wdb 
+ISim P.28xd (signature 0x1048c146)
+This is a Full version of ISim.
+ERROR: at 0 ps: Could not open file 'input.txt' of text
+ERROR: Time resolution is 1 fs
+# onerror resume
+# wave add /
+No active Database
+# run 1000 ns
+Unable to execute live simulation command.

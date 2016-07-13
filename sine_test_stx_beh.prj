@@ -1,0 +1,2 @@
+vhdl isim_temp "ipcore_dir/sine_wave.vhd"
+vhdl isim_temp "sine_test.vhd"
